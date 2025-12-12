@@ -1,0 +1,38 @@
+.buymanga-topbox:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.buymanga-topbox:hover .image-title {
+    color: yellow !important;
+}
+
+.buymanga-bottombox-buttonleft:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buymanga-bottombox-buttonright:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* .buymanga-container-addtocartclicked {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+} */
+
+.cotainer-addtocartclicked-msg {
+    color: yellow;
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+    font-size: 30px;
+}

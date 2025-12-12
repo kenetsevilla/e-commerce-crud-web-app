@@ -1,0 +1,190 @@
+.cart-container {
+    position: relative;
+    background-image: url('../../assets/my_assets/homepage/Homepage BG 3.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+.cart-container-barline {
+    position: absolute;
+    top: 11.2%;
+    border: 0.25px solid rgba(147, 38, 184, 0.5);
+    width: 100%;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* === Header === */
+.cart-header {
+    position: absolute;
+    display: flex;
+    /* border: 1px solid white; */
+    top: 1.5%;
+    right: 0%;
+    width: 93%;
+    height: 9.8%;
+}
+
+.cart-header span {
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.cart-header .active {
+    background-color:  rgba(255, 255, 255, 0.1);
+}
+
+.cart-header-allorder {
+    /* position: absolute; */
+    /* top: 0;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.75% 1%; */
+    color: white;
+    font-size: 20px;
+    /* cursor: pointer; */
+    margin-left: 5%;
+}
+
+.cart-header-toreceive {
+    color: white;
+    font-size: 20px;
+}
+
+.cart-header-received {
+    color: white;
+    font-size: 20px;
+}
+
+/* === Body === */
+.cart-body {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 88.6%;
+    /* overflow-y: auto; */
+    /* flex-wrap: wrap; */
+    /* background-color: hsla(264, 50%, 50%, 0.2); */
+    /* gap: 10px; */
+    /* padding-bottom: 5.4%; */
+}
+
+.cart-body-received {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: hsla(264, 50%, 50%, 0.2);
+    gap: 10px;
+    padding-bottom: 5.4%;
+}
+
+.cart-body-msg3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -60% -300%;
+    font-size: 30px;
+    color: white;
+}
+
+.cart-body-toreceive {
+    position: absolute;
+    background-color: hsla(264, 50%, 50%, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.cart-body-msg2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -60% -300%;
+    font-size: 30px;
+    color: white;
+}
+
+.cart-body-allorder {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: hsla(264, 50%, 50%, 0.2);
+    gap: 10px;
+    padding-bottom: 5.4%;
+}
+
+.cart-body-msg1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -60% -300%;
+    font-size: 30px;
+    color: white;
+}
+
+.cart-subtotal-checkout {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 10%;
+}
+
+.subtotal-checkout-icon {
+    color: white;
+    font-size: 30px;
+    margin-left: 1.7%;
+}
+
+.subtotal-checkout-msg1 {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.subtotal-checkout-msg1-part2 {
+    color: rgb(184, 38, 148);
+}
+
+.subtotal-checkout-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5%;
+    background: linear-gradient(to right, rgb(147, 38, 184), rgb(184, 38, 148));
+    width: 9%;
+    height: 60%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.subtotal-checkout-button:hover {
+    transform: scale(1.15);
+}
+
+.subtotal-checkout-button-msg1 {
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,299 @@
+.header {
+    background-image: url('/src/assets/my_assets/homepage/header/Anime Mashup Banner Final.png');
+    background-attachment: fixed;
+    background-size: 90% 70%;
+    background-position-y: -70px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    max-height: 120px;
+    margin-top: 10px;
+
+    animation: moveBackground 60s linear infinite;
+}
+
+.header-bgc {
+    position: absolute;
+    background-color: hsl(0, 0%, 0%, 0.75);
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 40px 30px rgba(0, 0, 0, 0.9), inset 0 -40px 30px rgba(0, 0, 0, 0.9);
+}
+
+/* --- Header Section 1 --- */
+.header-sec1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    width: 90%;
+    height: 90%;
+}
+
+/* Search box line */
+.searchboxline {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* background-color: black; */
+    width: 99%;
+    height: 55%;
+    margin: 0px 10px;
+}
+
+.sb-buttons {
+    color: rgb(216, 216, 216);
+    font-size: 20px;
+    padding-top: 100px;
+    margin: 0px 20px;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50px);
+}
+
+.sb-buttons:hover {
+    transform: translateY(-48px);
+    transition: 0.2s;
+}
+
+#bestsellers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#bestsellers:hover {
+    color: rgb(244, 106, 198);
+}
+
+#bestsellers::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#bestsellers:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+#limitededition {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#limitededition:hover {
+    color: rgb(244, 106, 198);
+}
+
+#limitededition::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#limitededition:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+#sale {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sale:hover {
+    color: rgb(244, 106, 198);
+}
+
+#sale::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#sale:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+#mangas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mangas:hover {
+    color: rgb(244, 106, 198);
+}
+
+#mangas::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#mangas:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+#cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart:hover {
+    color: rgb(244, 106, 198);
+}
+
+#cart::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#cart:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+#user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user:hover {
+    color: rgb(244, 106, 198);
+}
+
+#user::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    background-color: rgb(244, 106, 198);
+    width: 100%;
+    height: 10px;
+}
+
+#user:hover::after {
+    opacity: 100%;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+/* --- Header Section 2 --- */
+.header-sec2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 12%;
+    height: 90%;
+}
+
+/* Logo */
+.bannerlogo {
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 90%;
+    margin: 0px 10px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    transition: 0.2s;
+}
+
+.bannerlogo:hover {
+    transform: scale(1.20);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Searchbox */
+.searchbox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2%;
+    background-color:  rgb(255, 255, 255);
+    width: 20%;
+    height: 30%;
+    border-radius: 100px;
+    overflow:hidden
+}
+
+.textbox {
+    width: 100%;
+    height: 100%;
+    margin: 0px 50px 0px 15px;
+    border-radius: 100px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px 0px 12px;
+    font-size: 25px;
+    background: linear-gradient(to left, rgb(147, 38, 184), rgb(218, 58, 188));
+    border: 1px solid rgb(147, 38, 184);
+    border-radius: 100px;
+    transition: 0.1s;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+/* === Animations === */
+@keyframes moveBackground {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000%;
+    }
+}

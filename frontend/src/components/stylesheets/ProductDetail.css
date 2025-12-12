@@ -1,0 +1,193 @@
+.productdetail-container {
+    background-image: url('../../assets/my_assets/homepage/Homepage BG 3.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.productdetail-body {
+    position: relative;
+    display: flex;
+    /* border: 1px solid blue; */
+    height: 100%;
+    background-color: hsla(264, 50%, 50%, 0.2);
+}
+
+/* === Left === */
+.pd-body-lefthalf {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: lime; */
+    width: 50%;
+    height: 100%;
+}
+
+.pd-lefthalf-mangaImage {
+    position: relative;
+    background-color: gray;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.mangaimage-shine {
+    position: absolute;
+    left: -400px;
+    top: -400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 1000px;
+    height: 20%;
+    transform: rotate(-45deg);
+
+    animation: productShine 5s ease-in-out infinite;
+}
+
+.pd-lefthalf-mangaStock {
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    font-size: 35px;
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+    user-select: none;
+}
+
+/* === Right === */
+.pd-body-righthalf {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 60%;
+    height: 100%;
+}
+
+/* Right Top */
+.righthalf-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 60%;
+}
+
+.righthalf-top-mangatitle {
+    color: white;
+    margin-top: 8%;
+    font-size: 40px;
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+}
+
+.righthalf-top-mangaauthor {
+    color: rgb(200, 200, 200);
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+}
+
+.righthalf-top-description {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 2%;
+    margin-top: 3%;
+    width: 95%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.righthalf-top-synopsis {
+    color: rgb(255, 255, 255);
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+}
+
+.righthalf-top-desc {
+    color: rgb(200, 200, 200);
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+}
+
+/* Right bottom */
+.righthalf-bottom {
+    position: relative;
+    display: flex;
+    /* background-color: violet; */
+    width: 100%;
+    height: 40%;
+}
+
+.righthalf-mangaprice {
+    position: absolute;
+    top: 17%;
+    left: 1.5%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 30px;
+    font-family: "Barlow Condensed", "consolas", sans-serif;
+}
+
+.righthalf-buybutton {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to right, rgb(147, 38, 184), rgb(184, 38, 148));
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.righthalf-buybutton:hover {
+    transform: scale(1.1);
+}
+
+.righthalf-addtocartbutton {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to right, rgb(184, 38, 148), rgb(244, 106, 198));
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.righthalf-addtocartbutton:hover {
+    transform: scale(1.1);
+}
+
+@keyframes productShine {
+    0% {
+        left: -900px;
+        top: -100px;
+    }
+    20% {
+        left: -30px;
+        top: 400px;
+    }
+    100% {
+        left: -30px;
+        top: 400px;
+    }
+}
